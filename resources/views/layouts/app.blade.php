@@ -9,8 +9,6 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
- 
-
     @include('inc.estilos')
 
 </head>
@@ -23,6 +21,9 @@
             @yield('content')
         </main>
     </div>
+
+    <x-footer />
+
 </body>
 @include('inc.scripts')
 </html>
