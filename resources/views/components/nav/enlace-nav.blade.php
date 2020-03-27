@@ -8,7 +8,14 @@
 		@endif </a>
 		<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
 			@foreach (obtenerEnlacesNav($enlacePrincipal) as $nombre => $ruta)
-				<a class="dropdown-item" href="{{ route($ruta) }}">{{ $nombre }}</a>
+				@if ($nombre === 'Salir')
+					<a class="dropdown-item" href="{{ route($ruta) }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ $nombre }}</a>
+					<form id="logout-form" action="{{ route($ruta) }}" method="POST" style="display: none;">
+						@csrf
+					</form>
+				@else
+					<a class="dropdown-item" href="{{ route($ruta) }}">{{ $nombre }}</a>
+				@endif
 			@endforeach
 		</div>
 	</li>

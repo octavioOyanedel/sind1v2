@@ -1,4 +1,4 @@
-body{
+body, input, select, option{
     font-family: 'Nunito', sans-serif;
 }
 
