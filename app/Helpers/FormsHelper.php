@@ -3,7 +3,7 @@
 
 /**
  * Descripción: Obtener ruta de include que cargara atributo @CSRF
- * Entrada/s: nombre de acción put o delete
+ * Entrada/s: string con nombre de acción put o delete
   * Salida: string con nombre de ruta para completar include, por defecto retorna post
  */
 function obtenerCsrf($nombre)
@@ -19,3 +19,22 @@ function obtenerCsrf($nombre)
 	        return 'inc.forms.csrf.post';
 	}
 }
+
+
+/**
+ * Descripción: Obtener ruta para cargar formulario
+ * Entrada/s: string con titulo de formulario
+ * Salida: string con ruta
+ */
+function obtenerRutaFormulario($nombre)
+{
+	switch ($nombre) {
+	    case "Iniciar Sesión":
+	    	return 'inc.forms.contenidos.login';
+	        break;
+	    case "Restablecer Contraseña":
+	    	return 'inc.forms.contenidos.restablecer_pass';
+	        break;
+	}
+}
+

@@ -4,9 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-5 col-sm-12">
-            <!-- Default form login -->
+            <!-- Formulario login -->
             <x-form titulo="Iniciar Sesión" metodo="POST" ruta="login" csrf="post"/>           
-            <!-- Default form login -->
+            <!-- Formulario login -->
         </div>
     </div>
 </div>
