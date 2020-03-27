@@ -52,3 +52,16 @@ a.dropdown-item.waves-effect.waves-light{
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
 }
+
+/*
+ * Media query boton buscar nav
+ */
+
+
+@media (max-width: 575px) {
+    #botonBuscarNav{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        width: 100% !important;
+    }
+}
