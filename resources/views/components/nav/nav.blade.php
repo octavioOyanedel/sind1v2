@@ -3,7 +3,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
 		<!-- Navbar brand -->
-		<a class="navbar-brand" href="#">@svg('logo_sin_texto')</a>
+		<a class="navbar-brand" href="{{ route('home') }}">@svg('logo_sin_texto')</a>
 
 		<!-- Collapse button -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSind1"
@@ -17,80 +17,18 @@
 		<!-- Links -->
 		<ul class="navbar-nav mr-auto">
 
+			<!-- Dropdown usuario -->
+			<x-enlace-nav enlacePrincipal="Usuario"/>
 			<!-- Dropdown socios -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">Hola, <b>Octavio</b></a>
-				<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Actualizar Datos</a>
-					<a class="dropdown-item" href="#">Cambiar Contraseña</a>
-					<a class="dropdown-item" href="#">Salir</a>
-				</div>
-			</li>
-
-			<!-- Dropdown socios -->
-			<li class="nav-item dropdown active">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">Socios</a>
-				<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Incorporar</a>
-					<a class="dropdown-item" href="#">Listar</a>
-					<a class="dropdown-item" href="#">Filtrar</a>
-				</div>
-			</li>
-
+			<x-enlace-nav enlacePrincipal="Socios"/>
 			<!-- Dropdown préstamos -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">Préstamos</a>
-				<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Solicitar</a>
-					<a class="dropdown-item" href="#">Listar</a>
-					<a class="dropdown-item" href="#">Filtrar</a>
-				</div>
-			</li>
-
+			<x-enlace-nav enlacePrincipal="Préstamos"/>
 			<!-- Dropdown registros contables -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">Contabilidad</a>
-				<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Registrar</a>
-					<a class="dropdown-item" href="#">Listar</a>
-					<a class="dropdown-item" href="#">Filtrar</a>
-					<a class="dropdown-item" href="#">Conciliación</a>
-					<a class="dropdown-item" href="#">Anular</a>
-				</div>
-			</li>
-
+			<x-enlace-nav enlacePrincipal="Contabilidad"/>
 			<!-- Dropdown estadísticas -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">Estadísticas</a>
-				<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Sede - Área</a>
-					<a class="dropdown-item" href="#">Comuna - Ciudad</a>
-					<a class="dropdown-item" href="#">Cargo</a>
-					<a class="dropdown-item" href="#">Incorporación - Desvinculación</a>
-					<a class="dropdown-item" href="#">Nacionalidad</a>
-					<a class="dropdown-item" href="#">Estudios</a>
-					<a class="dropdown-item" href="#">Cargas</a>
-				</div>
-			</li>
-
+			<x-enlace-nav enlacePrincipal="Estadísticas"/>
 			<!-- Dropdown administración -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">Administración</a>
-				<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Socios</a>
-					<a class="dropdown-item" href="#">Usuarios</a>
-					<a class="dropdown-item" href="#">Estudios</a>
-					<a class="dropdown-item" href="#">Préstamos</a>
-					<a class="dropdown-item" href="#">Contabilidad</a>
-					<a class="dropdown-item" href="#">Historial</a>
-				</div>
-			</li>	
+			<x-enlace-nav enlacePrincipal="Administración"/>
 
 		</ul>
 		<!-- Links -->

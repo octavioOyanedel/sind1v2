@@ -16,6 +16,7 @@
 </head>
 <body>
     <div id="app">
+
         <x-nav /> 
 
         <main class="py-4">

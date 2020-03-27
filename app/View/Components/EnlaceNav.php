@@ -4,16 +4,18 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Nav extends Component
+class EnlaceNav extends Component
 {
+    public $enlacePrincipal;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($enlacePrincipal)
     {
-
+        $this->enlacePrincipal = $enlacePrincipal;
     }
 
     /**
@@ -23,6 +25,6 @@ class Nav extends Component
      */
     public function render()
     {
-        return view('components.nav.nav');
+        return view('components.nav.enlace-nav');
     }
 }
