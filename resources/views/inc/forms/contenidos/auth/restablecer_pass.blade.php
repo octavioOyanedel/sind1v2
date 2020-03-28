@@ -5,7 +5,7 @@
     <p class="h4 mb-4">{{ $titulo }}</p>
 
 	<!-- Input correo -->
-	<x-input tipo="email" nombre="email" placeholder="Correo" required="si"/>
+	<x-input tipo="email" nombre="email" placeholder="Correo" size="form-control-md" required="si"/>
 
 	<!-- Mensaje informativo -->
 	@include('inc.forms.recuperar_pass.info')

@@ -13,7 +13,7 @@ function obtenerEnlacesNav($nombre)
 			return array('Actualizar Datos'=>'home','Cambiar Contraseña'=>'home','Salir'=>'logout');
 		break;		
 		case "Socios":
-			return array('Incorporar'=>'home','Listar'=>'home','Buscar'=>'home');
+			return array('Incorporar'=>'socios.create','Listar'=>'home','Buscar'=>'home');
 		break;
 		case "Préstamos":
 			return array('Solicitar'=>'home','Listar'=>'home','Buscar'=>'home');

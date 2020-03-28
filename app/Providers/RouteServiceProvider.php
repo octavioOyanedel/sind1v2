@@ -46,8 +46,24 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapSocioRoutes();
+
         //
     }
+
+
+    /**
+     * Descripción: Archivo de rutas para módulo socios
+     * Entrada/s: 
+     * Salida: 
+     */
+    function mapSocioRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/socio.php'));
+    }
+    
 
     /**
      * Define the "web" routes for the application.

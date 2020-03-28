@@ -30,11 +30,14 @@ function obtenerRutaFormulario($nombre)
 {
 	switch ($nombre) {
 	    case "Iniciar Sesión":
-	    	return 'inc.forms.contenidos.login';
+	    	return 'inc.forms.contenidos.auth.login';
 	        break;
 	    case "Restablecer Contraseña":
-	    	return 'inc.forms.contenidos.restablecer_pass';
+	    	return 'inc.forms.contenidos.auth.restablecer_pass';
 	        break;
+	    case "Registrar Socio":
+	    	return 'inc.forms.contenidos.socio.create';
+	        break;	        
 	}
 }
 
