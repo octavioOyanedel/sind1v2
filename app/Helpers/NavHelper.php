@@ -16,7 +16,7 @@ function obtenerEnlacesNav($nombre)
 			return array('Incorporar'=>'socios.create','Listar'=>'home','Buscar'=>'home');
 		break;
 		case "Préstamos":
-			return array('Solicitar'=>'home','Listar'=>'home','Buscar'=>'home');
+			return array('Solicitar'=>'prestamos.create','Listar'=>'home','Buscar'=>'home');
 		break;
 		case "Contabilidad":
 			return array('Registrar'=>'home','Listar'=>'home','Buscar'=>'home','Conciliación'=>'home','Anular'=>'home');

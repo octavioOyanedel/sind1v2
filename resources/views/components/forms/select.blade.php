@@ -10,6 +10,16 @@
 					<option value="Varón">Varón</option>
 				@else	
 					<option value="" selected>{{ $titulo }}</option>
+					<option value="">gdfgdfgdfgdfgdf</option>
+					<option value="">dgf</option>
+					<option value="">dfgfd</option>
+					<option value="">dfgfdg</option>
+					<option value="">dfgdfgfdgfdgdg gdf gf fdg fdgdfgfd dfgfd</option>
+					<option value="">dfgd</option>
+					<option value="">tyrty</option>
+					<option value="">rty</option>
+					<option value="">rty tyt tyrt</option>
+					<option value="">rtytry tyty ty</option>
 				@endif
 		</select>		
 	</div>	

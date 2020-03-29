@@ -5,7 +5,7 @@
     <p class=" {{ $alinear }} h4 mb-4">{{ $titulo }}</p>
 
     	<!-- Mensaje informativo -->
-	@include('inc.forms.socio.info')
+	@include('inc.forms.obligatorio.info')
 
     <!-- Número socio -->
 	<x-input tipo="text" nombre="numero" placeholder="123" size="form-control-sm" required="si" label="Número de Socio"/> 

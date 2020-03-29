@@ -37,7 +37,10 @@ function obtenerRutaFormulario($nombre)
 	        break;
 	    case "Registrar Socio":
 	    	return 'inc.forms.contenidos.socio.create';
-	        break;	        
+	        break;	
+	    case "Solicitar Préstamo":
+	    	return 'inc.forms.contenidos.prestamo.create';
+	        break;		                
 	}
 }
 
