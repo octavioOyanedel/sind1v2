@@ -41,3 +41,15 @@ function obtenerRutaFormulario($nombre)
 	}
 }
 
+
+/**
+ * Descripción: Obtener fecha actual
+ * Entrada/s: 
+ * Salida: string con fecha actual
+ */
+function obtenerFechaActual()
+{ 
+	return date('Y-m-d');
+}
+
+

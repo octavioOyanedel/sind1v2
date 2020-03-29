@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-5 col-sm-12">
             <!-- Formulario login -->
-            <x-form titulo="Restablecer Contraseña" metodo="POST" ruta="password.email" csrf="post"/>           
+            <x-form titulo="Restablecer Contraseña" metodo="POST" ruta="password.email" csrf="post" alinear="text-center"/>           
             <!-- Formulario login -->
         </div>
     </div>

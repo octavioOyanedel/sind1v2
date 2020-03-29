@@ -9,18 +9,20 @@ class Form extends Component
     public $metodo;
     public $ruta;
     public $csrf;
-    public $titulo;    
+    public $titulo;
+    public $alinear;    
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($metodo, $ruta, $csrf, $titulo)
+    public function __construct($metodo, $ruta, $csrf, $titulo, $alinear)
     {
-        $this->metodo=$metodo;
-        $this->ruta=$ruta;
-        $this->csrf=$csrf;
-        $this->titulo=$titulo;
+        $this->metodo = $metodo;
+        $this->ruta = $ruta;
+        $this->csrf = $csrf;
+        $this->titulo = $titulo;
+        $this->alinear = $alinear;
     }
 
     /**
