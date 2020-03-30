@@ -52,6 +52,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapContableRoutes();
 
+        $this->mapAdministracionRoutes();
+
         //
     }
 
@@ -81,7 +83,7 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /**
-     * Descripción: Archivo de rutas para módulo prestamos
+     * Descripción: Archivo de rutas para módulo contabilidad
      * Entrada/s: 
      * Salida: 
      */
@@ -90,6 +92,18 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
             ->namespace($this->namespace)
             ->group(base_path('routes/contable.php'));
+    } 
+
+    /**
+     * Descripción: Archivo de rutas para módulo administracion
+     * Entrada/s: 
+     * Salida: 
+     */
+    function mapAdministracionRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/administracion.php'));
     } 
 
     /**

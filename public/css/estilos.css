@@ -3,6 +3,20 @@ body, input, select, option{
 }
 
 /*
+ * Deshabilitar ajuste de linea en celdas de tabla
+ */
+table tbody td, table thead th{
+    white-space: nowrap !important;
+}
+
+/*
+ * Botón accion tabla
+ */
+a.boton-tabla{
+
+}
+
+/*
  * Modificación tamaño de fuente
  */
 body, 
