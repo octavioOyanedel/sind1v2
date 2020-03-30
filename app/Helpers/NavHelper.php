@@ -19,7 +19,7 @@ function obtenerEnlacesNav($nombre)
 			return array('Solicitar'=>'prestamos.create','Listar'=>'home','Buscar'=>'home');
 		break;
 		case "Contabilidad":
-			return array('Registrar'=>'home','Listar'=>'home','Buscar'=>'home','Conciliación'=>'home','Anular'=>'home');
+			return array('Registrar'=>'contables.create','Listar'=>'home','Buscar'=>'home','Conciliación'=>'home','Anular'=>'home');
 		break;   	 
 		case "Estadísticas":
 			return array('Sede - Área'=>'home','Comuna - Ciudad'=>'home','Cargo'=>'home','Incorporación - Desvinculación'=>'home','Nacionalidad'=>'home','Estudios'=>'home','Cargas'=>'home');

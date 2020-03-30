@@ -40,7 +40,10 @@ function obtenerRutaFormulario($nombre)
 	        break;	
 	    case "Solicitar Préstamo":
 	    	return 'inc.forms.contenidos.prestamo.create';
-	        break;		                
+	        break;
+	    case "Agregar Registro Contable":
+	    	return 'inc.forms.contenidos.contable.create';
+	        break;	        		                
 	}
 }
 

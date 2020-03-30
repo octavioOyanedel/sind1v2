@@ -50,6 +50,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapPrestamoRoutes();
 
+        $this->mapContableRoutes();
+
         //
     }
 
@@ -76,7 +78,19 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
             ->namespace($this->namespace)
             ->group(base_path('routes/prestamo.php'));
-    }  
+    }
+
+    /**
+     * Descripción: Archivo de rutas para módulo prestamos
+     * Entrada/s: 
+     * Salida: 
+     */
+    function mapContableRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/contable.php'));
+    } 
 
     /**
      * Define the "web" routes for the application.

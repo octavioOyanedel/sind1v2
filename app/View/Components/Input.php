@@ -12,12 +12,13 @@ class Input extends Component
     public $required;
     public $size;
     public $label;
+    public $valor;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($tipo, $nombre, $placeholder, $required, $size, $label)
+    public function __construct($tipo, $nombre, $placeholder, $required, $size, $label, $valor)
     {
         $this->tipo = $tipo;
         $this->nombre = $nombre;
@@ -25,6 +26,7 @@ class Input extends Component
         $this->required = $required;
         $this->size = $size;
         $this->label = $label;
+        $this->valor = $valor;
     }
 
     /**

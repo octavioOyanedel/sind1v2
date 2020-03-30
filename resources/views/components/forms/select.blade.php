@@ -9,7 +9,6 @@
 					<option value="Dama">Dama</option>
 					<option value="Varón">Varón</option>
 				@else	
-					<option value="" selected>{{ $titulo }}</option>
 					<option value="">gdfgdfgdfgdfgdf</option>
 					<option value="">dgf</option>
 					<option value="">dfgfd</option>
