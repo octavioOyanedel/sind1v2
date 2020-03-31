@@ -5,10 +5,10 @@
     <p class="{{ $alinear }} h4 mb-4">{{ $titulo }}</p>
 
 	<!-- Input correo -->
-	<x-input tipo="email" nombre="email" placeholder="Correo" size="form-control-md" required="si" label=""/>
+	<x-input tipo="email" nombre="email" placeholder="Correo" size="form-control-md" required="si" label="" valor=""/>
 
 	<!-- Input contraseña -->
-	<x-input tipo="password" nombre="password" placeholder="Contraseña" size="form-control-md" required="si" label=""/>
+	<x-input tipo="password" nombre="password" placeholder="Contraseña" size="form-control-md" required="si" label="" valor=""/>
 
 	<!-- Error validación -->
 	@include('inc.forms.login.error')

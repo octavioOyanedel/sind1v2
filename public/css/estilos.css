@@ -10,10 +10,10 @@ table tbody td, table thead th{
 }
 
 /*
- * Botón accion tabla
+ * Formato botón filtro
  */
-a.boton-tabla{
-
+button.filtro{
+    width: 100%;
 }
 
 /*

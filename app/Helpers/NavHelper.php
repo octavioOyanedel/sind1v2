@@ -25,7 +25,7 @@ function obtenerEnlacesNav($nombre)
 			return array('Sede - Área'=>'home','Comuna - Ciudad'=>'home','Cargo'=>'home','Incorporación - Desvinculación'=>'home','Nacionalidad'=>'home','Estudios'=>'home','Cargas'=>'home');
 		break;    
 		case "Administración":
-			return array('Socios'=>'admin.socios','Usuarios'=>'home','Estudios'=>'home','Préstamos'=>'home','Contabilidad'=>'home','Historial'=>'home');
+			return array('Socios'=>'admin.socios.area','Usuarios'=>'home','Estudios'=>'admin.estudios.nivel','Préstamos'=>'admin.prestamos.forma.pago','Contabilidad'=>'home','Historial'=>'home');
 		break;   		     
 	}
 }

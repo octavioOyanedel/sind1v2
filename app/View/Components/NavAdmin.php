@@ -4,17 +4,21 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Tabla extends Component
+class NavAdmin extends Component
 {
-    public $cabecerasTabla;
+    public $titulo;
+    public $enlaces;
+    public $tituloTabla;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($cabecerasTabla)
+    public function __construct($titulo, $enlaces, $tituloTabla)
     {
-        $this->cabecerasTabla = $cabecerasTabla;
+        $this->titulo = $titulo;
+        $this->enlaces = $enlaces;
+        $this->tituloTabla = $tituloTabla;        
     }
 
     /**
@@ -24,6 +28,6 @@ class Tabla extends Component
      */
     public function render()
     {
-        return view('components.tablas.tabla');
+        return view('components.tablas.nav-admin');
     }
 }

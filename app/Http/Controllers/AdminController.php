@@ -12,9 +12,29 @@ class AdminController extends Controller
      * Entrada/s: request
      * Salida: llamada a vista
      */
-    function socios(Request $request)
+    function sociosArea(Request $request)
     {
-    	return view('app.administracion.socios.index');
+    	return view('app.administracion.socios.area');
+    }
+
+    /**
+     * Descripción: Muestra página de mantenedor estudios realizados
+     * Entrada/s: request
+     * Salida: llamada a vista
+     */
+    function estudiosNivel(Request $request)
+    {
+    	return view('app.administracion.estudios.nivel');
+    }
+
+    /**
+     * Descripción: Muestra página de mantenedor de préstamos
+     * Entrada/s: request
+     * Salida: llamada a vista
+     */
+    function prestamosFormaPago(Request $request)
+    {
+        return view('app.administracion.prestamos.forma_pago');
     }
     
 }

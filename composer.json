@@ -40,7 +40,8 @@
         },
         "files": [
             "app/helpers/NavHelper.php",
-            "app/helpers/FormsHelper.php"
+            "app/helpers/FormsHelper.php",
+            "app/helpers/TablasHelper.php"
         ],
         "classmap": [
             "database/seeds",
